@@ -63,6 +63,7 @@ class BibDatabase(object):
         self.strings = OrderedDict()  # Not sure if order is import, keep order just in case
         #: List of BibTeX preamble (`@preamble{...}`) blocks.
         self.preambles = []
+        self.load_common_strings()
 
     def load_common_strings(self):
         self.strings.update(COMMON_STRINGS)
